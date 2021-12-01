@@ -1,0 +1,71 @@
+/* Arrownav default properties*/
+.arrownav {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.arrownavUl {
+  background-color: var(--primary);
+  width: 90%;
+  height: 90vh;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  position: absolute;
+  z-index: 700;
+  top: -70%;
+  transition: all 1.3s ease-in-out;
+}
+.arrownavUl li {
+  grid-column: 4/10;
+}
+/* Nav animation */
+.arrownavUl.active {
+  top: 0;
+}
+/* Arrow icon default properties */
+.arrow {
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+  transition: all 1s ease-in-out;
+  position: relative;
+  
+  top: 40%;
+}
+/* Arrow icon animation */
+.arrow.active {
+  transform: rotate(180deg);
+}
+
+/* Icons */
+.icon {
+  color: white;
+  font-size: 2em;
+  grid-column: 3/5;
+  align-self: center;
+}
+
+/* Links */
+.arrownavLink {
+  color: white;
+  font-size: 1.5em;
+  grid-column: 6/10;
+  align-self: center;
+}
+/*Theme icon */
+.themeChanger {
+  color: white;
+  font-size: 3em;
+  position: relative;
+
+  top: 40%;
+}
+
+@media (min-width: 1025px) {
+  .icon {
+    color: white;
+    font-size: 2em;
+    grid-column: 5/6;
+    align-self: center;
+  }
+}

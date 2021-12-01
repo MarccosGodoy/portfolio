@@ -1,0 +1,45 @@
+/* Colours */
+:root {
+  --light: #fff;
+  --dark: #1d1d1d;
+  --primary: #ff4356;
+}
+
+/* Grid Properties */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-center {
+  justify-self: center;
+}
+
+.col-all {
+  grid-column: 1/13;
+}
+
+/* Flex Properties */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-colum-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General Properties*/
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
