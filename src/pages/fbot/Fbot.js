@@ -23,6 +23,10 @@ const Fbot = () => {
     setImgswitch(!imgswitch);
   };
 
+  const web = () => {
+    window.open('https://github.com/MarccosGodoy/fbot');
+  };
+
   return (
     <div className={theme ? "porfolio dark" : "porfolio"}>
       <div className="aboutNavContainer">
@@ -76,12 +80,14 @@ const Fbot = () => {
             alt=""
             className="desktop"
             className={imgswitch ? "desktop hide" : "desktop"}
+            onClick={web}
           />
           <img
             src={fbotMobile}
             alt=""
             className="mobile"
             className={imgswitch ? "mobile " : "mobile hide"}
+            onClick={web}
           />
         </div>
       </main>

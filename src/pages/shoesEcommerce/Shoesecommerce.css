@@ -49,10 +49,12 @@
 }
 .desktop {
   display: none;
+  cursor: pointer;
 }
 
 .mobile {
   width: 90%;
+  cursor: pointer;
 }
 
 @media (min-width: 1025px) {

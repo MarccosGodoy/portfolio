@@ -23,6 +23,10 @@ const Gitgud = () => {
     setImgswitch(!imgswitch);
   };
 
+  const web = () => {
+    window.open('https://gitgud.games/');
+  };
+
   return (
     <div className={theme ? "porfolio dark" : "porfolio"}>
       <div className="aboutNavContainer">
@@ -76,12 +80,14 @@ const Gitgud = () => {
             alt=""
             className="desktop"
             className={imgswitch ? "desktop hide" : "desktop"}
+            onClick={web}
           />
           <img
             src={gitgudMobile}
             alt=""
             className="mobile"
             className={imgswitch ? "mobile " : "mobile hide"}
+            onClick={web}
           />
         </div>
       </main>
