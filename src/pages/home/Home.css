@@ -42,7 +42,7 @@ h1 {
   border-radius: 0.2em;
   margin: 0.5em 0;
 }
-.homePortfolio a{
+.homePortfolio a {
   text-decoration: none;
   color: white;
 }
@@ -52,14 +52,16 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+
   width: 6em;
   height: 1.8em;
   font-size: 1.1em;
   border-radius: 0.2em;
   text-decoration: underline;
 }
-
+.homeResume a {
+  color: var(--primary);
+}
 /* Language Select */
 .homeLanguage {
   display: flex;

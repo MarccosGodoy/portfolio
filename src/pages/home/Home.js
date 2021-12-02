@@ -4,6 +4,7 @@ import LanguageContext from "../../context/languageContext";
 import "./Home.css";
 import ThemeContext from "../../context/themeContext";
 import { Link } from "react-router-dom";
+import resume from '../../files/resume.pdf'
 const Home = () => {
   const { theme } = useContext(ThemeContext);
   const { texts, handleLanguage } = useContext(LanguageContext);
@@ -27,7 +28,7 @@ const Home = () => {
         <li className="homePortfolio">
           <Link to="shoesEcommerce"> {texts.portfolio}</Link>
         </li>
-        <li className="homeResume">{texts.resume}</li>
+        <li className="homeResume"><a href={resume} target="_blank" download="resume">{texts.resume}</a></li>
       </ul>
 
       <ul className="homeLanguage">
