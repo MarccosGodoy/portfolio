@@ -1,8 +1,10 @@
 .about {
-  height: 100vh;
+  height: auto;
+  
 }
 .about.dark{
   background-color: var(--dark);
+  color: white;
 }
 .profile {
   width: 50%;

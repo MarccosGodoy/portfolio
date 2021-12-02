@@ -28,6 +28,8 @@ const translations = {
     message: "Mensaje",
     send: "Enviar",
     alternatives: "Alternativas",
+    desktop: "Escritorio",
+    mobile: "Movil"
   },
   en: {
     portfolio: "Portfolio",
@@ -51,6 +53,8 @@ const translations = {
     message: "Message",
     send: "Send",
     alternatives: "Alternatives",
+    desktop: "Desktop",
+    mobile: "Mobile"
   },
 };
 

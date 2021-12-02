@@ -1,0 +1,91 @@
+.porfolio {
+  height: 100vh;
+}
+.porfolio.dark {
+  background-color: var(--dark);
+  height: auto;
+}
+
+.interactionPorfolio {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.interactionPorfolio li {
+  font-size: 1.5em;
+  margin: 0 1em;
+  margin-top: 1em;
+}
+
+.interactionPorfolio li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.portfolioMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageSwitcher {
+  display: flex;
+
+  margin-top: 1em;
+  display: none;
+}
+
+.imageSwitcher li {
+  margin: 0 1em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.porfolioImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+.desktop {
+  display: none;
+}
+
+.mobile {
+  width: 90%;
+}
+
+@media (min-width: 1025px) {
+  .imageSwitcher {
+    display: flex;
+    margin-top: 1em;
+  }
+  .imageSwitcher.dark {
+    color: white;
+  }
+
+  .porfolio {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100vh;
+  }
+  .aboutNavContainer {
+    grid-row: 1/2;
+    grid-column: 8/13;
+    height: 100vh;
+  }
+  .desktop {
+    display: block;
+    width: 90%;
+  }
+  .desktop.hide {
+    display: none;
+  }
+  .mobile {
+    width: 35%;
+  }
+  .mobile.hide {
+    display: none;
+  }
+}
