@@ -27,15 +27,14 @@ const Contact = () => {
   const contactForm = async (e) => {
     e.preventDefault();
     const response = await emailjs.send(
-      "service_82tzowt",
-      "template_guy08gq",
+      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID',
       {
         subject: "Mail de trabajo",
         name: client.current.value,
         email: email.current.value,
         message: message.current.value,
       },
-      "user_HuaiY0cbLO2UNYd4i0qcz"
+      'YOUR_USER_ID'
     );
 
     console.log(response);
